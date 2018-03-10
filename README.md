@@ -1,4 +1,4 @@
-# VIRTUe Webapp Angular
+# VIRTUe Webapp Angular (deprecated)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
 
