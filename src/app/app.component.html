@@ -1,0 +1,27 @@
+<!--<main>-->
+  <!--<router-outlet></router-outlet>-->
+
+  <!--<nav class="nav-bottom">-->
+    <!--<a routerLink="/home"></a>-->
+    <!--<a routerLink="/report"></a>-->
+    <!--<a routerLink="/settings"></a>-->
+  <!--</nav>-->
+<!--</main>-->
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<nav class="nav-bottom">
+  <mdc-tab-bar>
+    <mdc-tab routerLink="/home">
+      <mdc-icon>home</mdc-icon>
+    </mdc-tab>
+    <mdc-tab routerLink="/reports">
+      <mdc-icon>assessment</mdc-icon>
+    </mdc-tab>
+    <mdc-tab routerLink="/settings">
+      <mdc-icon>settings</mdc-icon>
+    </mdc-tab>
+  </mdc-tab-bar>
+</nav>

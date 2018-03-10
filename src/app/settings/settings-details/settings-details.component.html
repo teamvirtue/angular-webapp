@@ -1,0 +1,109 @@
+<!--<mat-list>-->
+  <!--<h3 mat-subheader>Folders</h3>-->
+  <!--<mat-list-item *ngFor="let folder of folders">-->
+    <!--<mat-icon mat-list-icon>folder</mat-icon>-->
+
+    <!--<h4 mat-line>{{folder.name}}</h4>-->
+    <!--<p mat-line> {{folder.updated | date}} </p>-->
+
+    <!--<mat-slide-toggle></mat-slide-toggle>-->
+  <!--</mat-list-item>-->
+
+  <!--<mat-divider></mat-divider>-->
+
+  <!--<h3 mat-subheader>Notes</h3>-->
+  <!--<mat-list-item *ngFor="let note of notes">-->
+    <!--<mat-icon mat-list-icon>note</mat-icon>-->
+    <!--<h4 mat-line>{{note.name}}</h4>-->
+    <!--<p mat-line> {{note.updated | date}} </p>-->
+  <!--</mat-list-item>-->
+<!--</mat-list>-->
+
+<mat-list>
+  <h3 mat-subheader>Residents</h3>
+  <mat-list-item>
+    <mat-icon mat-list-icon>person</mat-icon>
+
+    <h4 mat-line>You</h4>
+    <p mat-line>Jane Doe</p>
+    <!--<mat-form-field class="mat-form-field-name">-->
+      <!--<input matInput placeholder="Full name" value="John Doe">-->
+    <!--</mat-form-field>-->
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>person_outline</mat-icon>
+
+    <h4 mat-line>Partner</h4>
+    <p mat-line>John Doe</p>
+    <!--<mat-form-field class="mat-form-field-name">-->
+    <!--<input matInput placeholder="Full name" value="John Doe">-->
+    <!--</mat-form-field>-->
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <h3 mat-subheader>Notifications</h3>
+  <mat-list-item>
+    <mat-icon mat-list-icon>volume_up</mat-icon>
+
+    <h4 mat-line>Volume</h4>
+    <p mat-line>10%</p>
+
+    <mat-slider
+      min="1"
+      max="100"
+      step="10"
+      value="50">
+    </mat-slider>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>vibration</mat-icon>
+
+    <h4 mat-line>Vibrate</h4>
+
+    <mat-slide-toggle></mat-slide-toggle>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <h3 mat-subheader>Home Preferences</h3>
+  <mat-list-item>
+    <mat-icon mat-list-icon>hotel</mat-icon>
+
+    <h4 mat-line>Sleep rhythm</h4>
+    <p mat-line>Weekly</p>
+
+    <mat-form-field>
+      <input type="time" matInput placeholder="Time">
+      <!--<mat-icon matSuffix>alarm</mat-icon>-->
+    </mat-form-field>
+  </mat-list-item>
+
+  <mat-list-item>
+    <!--<mat-icon mat-list-icon>toys</mat-icon>-->
+    <mat-icon mat-list-icon>ac_unit</mat-icon>
+
+    <h4 mat-line>Room temperature</h4>
+    <p mat-line>18°</p>
+
+    <mat-form-field>
+      <input type="number" matInput placeholder="Temperature" value="18">
+      <!--<mat-icon matSuffix>info</mat-icon>-->
+    </mat-form-field>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <h3 mat-subheader>About</h3>
+  <mat-list-item>
+    <h4 mat-line>Open-source licences</h4>
+    <p mat-line>Licence details for open-source software</p>
+  </mat-list-item>
+
+  <mat-list-item>
+    <h4 mat-line>Application version</h4>
+    <p mat-line>v1.0</p>
+  </mat-list-item>
+</mat-list>

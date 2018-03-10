@@ -1,0 +1,51 @@
+@import "../../variables";
+
+/*-------STYLES------*/
+
+.app-home {
+  display: flex;
+  flex-direction: column;
+
+  @include phone {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  @include tv {
+    flex-direction: row;
+  }
+}
+
+.mdc-tab-bar {
+  //width: 100%;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 25px 0;
+
+  .nav-circle {
+    width: 25vw;
+    min-width: 275px;
+    height: 25vw;
+    min-height: 275px;;
+    overflow: hidden;
+    border: 3px solid black;
+    @include border-radius(50%);
+  }
+}
+
+.circle-image {
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 500ms ease-in-out;
+  will-change: transform;
+}

@@ -1,0 +1,33 @@
+<div *ngIf="info" class="app-home-details">
+
+  <div class="page-title">
+    <h1>{{info.title}}</h1>
+    <!--<h1>{{user.name}}</h1>-->
+  </div>
+
+  <div class="info-bar">
+    <div class="info-item-1">
+      <h1>{{info.info_item1}} °</h1>
+      <p>{{info.info_item1_text}}</p>
+    </div>
+    <div class="info-item-2">
+      <h1>{{info.info_item2}}</h1>
+      <p>{{info.info_item2_text}}</p>
+    </div>
+    <div class="info-item-3">
+      <h1>{{info.info_item3}}</h1>
+      <p>{{info.info_item3_text}}</p>
+    </div>
+  </div>
+
+  <div *ngIf="info.message">
+    <div class="info-box">
+      <div class="box-item">
+        <!--<h2>Did You Know?</h2>-->
+        <mat-icon mat-list-icon>info</mat-icon>
+        <p>{{info.message}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

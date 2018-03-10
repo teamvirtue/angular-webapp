@@ -1,0 +1,82 @@
+@import "../../../variables";
+
+:host {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.app-home-details {
+  margin: auto;
+  //background-color: firebrick;
+  width: 100%;
+
+  @include tablet {
+    width: 85%;
+  }
+
+  @include desktop {
+    width: 75%;
+  }
+
+  @include tv {
+    width: 65%;
+  }
+}
+
+.page-title {
+  h1 {
+    margin-top: 75px;
+  }
+}
+
+.info-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  [class*="info-item-"] {
+    position: relative;
+    width: calc(100% / 3);
+    height: 10vh;
+    text-align: center;
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .info-item-2 {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      bottom: 14px;
+      right: 0;
+      border-left: 2px solid lightgray;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      bottom: 14px;
+      left: 0;
+      border-left: 2px solid lightgray;
+    }
+  }
+}
+
+.info-box {
+  width: 100%;
+  height: 15vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .box-item {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+  }
+}

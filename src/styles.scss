@@ -1,0 +1,45 @@
+@import "variables";
+@import "~@angular-mdc/theme";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  //background-color: white;
+}
+
+main {
+  width: 40vw;
+  min-width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  //background-color: white;
+
+  @include phone {
+    width: 50vw;
+  }
+
+  @include tablet {
+    width: 60vw;
+  }
+
+  @include desktop {
+    width: 70vw;
+  }
+
+  @include tv {
+    width: 80vw;
+  }
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1em;
+}

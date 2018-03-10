@@ -1,0 +1,40 @@
+<!--<mdc-toolbar>-->
+  <!--<mdc-toolbar-row>-->
+    <!--<mdc-toolbar-section [alignStart]="true"></mdc-toolbar-section>-->
+    <!--<mdc-toolbar-section [alignEnd]="true" [shrinkToFit]="false" class="mdc-padding">-->
+      <!--<mdc-tab-bar #homeTabBar (change)="handleTabChange($event)">-->
+        <!--<mdc-tab *ngFor="let info of info" routerLink="/home/{{info.id}}"-->
+                 <!--routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"-->
+                 <!--[class.active]="info === selectedInfo" (click)="onSelect(info)">-->
+          <!--{{info.title}}-->
+        <!--</mdc-tab>-->
+      <!--</mdc-tab-bar>-->
+    <!--</mdc-toolbar-section>-->
+  <!--</mdc-toolbar-row>-->
+<!--</mdc-toolbar>-->
+
+<nav id="basic-tab-bar" class="mdc-tab-bar" (change)="handleTabChange($event)">
+  <a class="mdc-tab" *ngFor="let info of info" routerLink="/home/{{info.id}}"
+     (click)="onSelect(info)">
+    {{info.title}}
+  </a>
+</nav>
+
+<div class="app-home">
+  <!--<div class="navigation">-->
+    <!--<nav id="basic-tab-bar" class="mdc-tab-bar">-->
+      <!--&lt;!&ndash;<span class="mdc-tab-bar__indicator"></span>&ndash;&gt;-->
+      <!--<a class="mdc-tab" *ngFor="let info of info" routerLink="/home/{{info.id}}"-->
+         <!--[class.active]="info === selectedInfo" (click)="onSelect(info)">-->
+        <!--{{info.title}}-->
+      <!--</a>-->
+    <!--</nav>-->
+
+    <div class="nav-main">
+      <div class="nav-circle">
+        <img src="../assets/img/placeholder.jpg" class="circle-image"/>
+      </div>
+    </div>
+
+  <app-home-details [info]="selectedInfo"></app-home-details>
+
